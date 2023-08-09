@@ -11,8 +11,9 @@ header {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: .4rem 0;
+  padding: 0.4rem 0;
   animation: fadeIn 1s;
+  margin-bottom: -20px;
 }
 
 @keyframes fadeIn {
@@ -59,6 +60,13 @@ header {
 .login-btn:hover,
 .signup-btn:hover{
   background-color: #8abaed;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
 }
 
 header h1 {
