@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>To-Do-List App</h1>
+        <div class="header-buttons">
+            <a href="index.html" class="logout-btn">Logout</a>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Add a Task</h2>
+
+            <form>
+                <label for="task-input">Task name</label>
+                <input type="text" id="task-input"/>
+
+                <label for="category-type">Category:</label>
+                <select id="category-type"></select>
+
+                <h4>Task Priority</h4>
+                <div class="radio">
+                    <label for="priority-one">1:</label>
+                    <input type="radio" name="priority" value="1" id="priority-one" checked="true"/>
+                </div>
+
+                <div class="radio">
+                    <label for="priority-two">2:</label>
+                    <input type="radio" name="priority" value="2" id="priority-two"/>
+                </div>
+
+                <div class="radio">
+                    <label for="priority-three">3:</label>
+                    <input type="radio" name="priority" value="3" id="priority-three"/>
+                </div>
+
+                <div class="radio">
+                    <label for="priority-four">4:</label>
+                    <input type="radio" name="priority" value="4" id="priority-four"/>
+                </div>
+
+                <div class="radio">
+                    <label for="priority-five">5:</label>
+                    <input type="radio" name="priority" value="5" id="priority-five"/>
+                </div>
+                
+                <button>Add</button>
+            </form>
+        </aside>
+
+        <section id="category-list"></section>
+    </main>
+
+    <footer>
+        
+        <p>&copy; 2023 To-Do List App</p>
+    </footer>
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
