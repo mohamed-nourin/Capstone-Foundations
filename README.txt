@@ -57,6 +57,8 @@ The To-Do List App is designed to provide users with a simple and efficient way 
 - PostgreSQL (Database)
 - Bcrypt (Password hashing)
 - Axios (HTTP requests)
+- Cors (Cross-origin resource sharing)
+- Dotenv (Environment variables)
 
 ## Contributing
 
