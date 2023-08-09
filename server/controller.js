@@ -129,7 +129,7 @@ module.exports = {
         });
       },
 
-      getUsers: (req, res) => {
+    getUsers: (req, res) => {
         sequelize.query(`
         SELECT * FROM "users";
         `)
@@ -137,8 +137,6 @@ module.exports = {
         .catch(err => res.status(500).send(err));
     },
     
-      
-        
     getCategories: (req, res) => {
         sequelize.query(`select * from categories;`)
         .then(dbRes => res.status(200).send(dbRes[0]))

@@ -30,7 +30,6 @@ function handleSubmit(e) {
         })
 }
 
-
 function deleteCard(id) {
     axios.delete(`http://localhost:5555/tasks/${id}`)
         .then(() => getTasks())
